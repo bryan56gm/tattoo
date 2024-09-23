@@ -1,0 +1,31 @@
+/* ----------------- BREAKPOINTS / MIXINS ----------------- */
+// Variables
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1400px;
+
+// Mixins
+@mixin mobile {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}

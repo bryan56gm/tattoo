@@ -1,0 +1,31 @@
+// CustomSwiper.module.scss
+
+.swiper {
+    & swiper-container{
+        width: 100%;
+        height: auto;
+        --swiper-navigation-color: #ff0cb6;
+        --swiper-pagination-color: #FF2E00;
+        --swiper-pagination-bullet-inactive-color: rgba(237, 237, 238, 0.5);
+        --swiper-pagination-bullet-inactive-opacity: 1;
+        --swiper-navigation-top-offset: 50%;
+        background-color: green;
+
+    }
+
+    & swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        background-color: #ffd900;
+        
+    }
+    
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+  }
+  

@@ -1,0 +1,34 @@
+.nav{
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(39, 39, 39, 0.6);
+    width: 100%;
+    transition: all .8s;
+    padding-block: 22px;
+
+    &__show{
+        transform: translateY(100%);
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        column-gap: 40px;
+    }
+    
+    &__link{
+        padding: 5px 10px;
+        border: 1px solid white;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    &__active{
+        color: rgb(255, 115, 0);
+    }
+}

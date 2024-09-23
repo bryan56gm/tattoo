@@ -1,0 +1,57 @@
+@import '../styles/breakpoints.scss';
+
+.description{
+    background-color: rgb(255, 255, 255);
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        @include tablet{
+            flex-direction: row;
+        }
+    }
+    
+    &__data{
+        text-align: center;
+        
+        @include tablet{
+            text-align: start;
+            order: 2;
+        }
+    }
+    
+    &__title{
+        margin-bottom: 20px;
+    }
+    
+    &__schedule{
+        text-align: center;
+        background-image: url('/assets/img/home/schedule.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 21px 25px;
+        color: white;
+        max-width: 300px;
+        border-radius: 15px;
+
+        @include tablet{
+            max-width: 250px;
+            width: 100%;
+            height: 250px;
+            display: grid;
+            align-content: center;
+            gap: 10px;
+            padding: 12px;
+            clip-path: polygon( 13.714% 19.571%,22.852% 7.761%,22.852% 7.761%,24.048% 6.354%,25.357% 5.074%,26.769% 3.926%,28.274% 2.914%,29.86% 2.045%,31.519% 1.322%,33.24% 0.751%,35.012% 0.337%,36.825% 0.085%,38.67% 0%,100% 0%,100% 100%,0% 100%,0% 46.198%,0% 46.198%,0.035% 45.017%,0.139% 43.844%,0.312% 42.682%,0.552% 41.534%,0.858% 40.403%,1.23% 39.292%,1.668% 38.203%,2.169% 37.141%,2.733% 36.107%,3.359% 35.104%,13.714% 19.571% );
+        }
+    }
+
+    &__subtitle{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+.tattoos{
+    &__title{
+        text-align: center;
+    }
+
+    &__gallery{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    &__img{
+        width: 208px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
